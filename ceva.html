@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" manifest="https://dl.dropboxusercontent.com/u/5756795/ceva/ceva.manifest">
+
+<head>
+	<meta charset='utf-8'>
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+	<title>Ceva</title>
+	<link rel="stylesheet" href="https://dl.dropboxusercontent.com/u/5756795/ceva/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="https://dl.dropboxusercontent.com/u/5756795/ceva/css/bootstrap-theme.min.css" />
+	<link rel="stylesheet" href="https://dl.dropboxusercontent.com/u/5756795/ceva/css/ceva.css" />
+	<!-- TODO: uncomment
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+	<link rel="stylesheet" href="css/ceva.css" />
+	-->
+</head>
+
+<body>
+	<section id="wrapper">
+		<section id="gameStats">
+			<div class="bar">
+				<p id="highscores">HIGHSCORES: <span id="top"></span></p>
+			</div>
+		</section>
+		<!-- #gameStats -->
+
+		<section id="game">
+			<section id="gameIntro">
+				<p><a id="gamePlay" class="button" href="">JOGAR</a></p>
+				<p class="nrPairs">Faça <span id="nrPairs"></span> pares para finalizar o jogo.</p>
+			</section>
+			<section id="gameOptions">
+				<p id="btConfig">config</p>
+			</section>
+			<!-- #gameIntro -->
+		</section>
+		<!-- #game -->
+
+		<div class="modal fade" id="modal" role="dialog">
+			<div class="modal-dialog modal-sm">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal"></button>
+						<h4 class="modal-title">Parabéns!</h4>
+					</div>
+					<div class="modal-body">
+						<p>Demorou <b><span class="gameScore"></b>.</p>
+						<p>Para se habilitar a ganhar um prémio insira os seus dados:</p>
+						<form id="form">
+							<div class="form-group">
+								<label  class="control-label" for="inputName">Nome</label>
+								<div class="input-group">
+									<input type="text" class="form-control" id="inputName" name="inputName" placeholder="Insira o seu nome"/>
+								</div>
+								<label  class="control-label" for="inputCAMV">CAMV</label>
+								<div class="input-group">
+									<input type="text" class="form-control" id="inputCAMV" name="inputCAMV" placeholder="Insira o seu CAMV"/>
+								</div>
+								<label  class="control-label" for="inputAddress">Morada</label>
+								<div class="input-group">
+									<input type="text" class="form-control" id="inputAddress" name="inputAddress" placeholder="Insira a sua morada"/>
+								</div>
+								<label  class="control-label" for="inputEmail">E-mail</label>
+								<div class="input-group">
+									<input type="text" class="form-control" id="inputEmail" name="inputEmail" placeholder="Insira o seu e-mail"/>
+								</div>
+								<label  class="control-label" for="inputPhone">Telefone</label>
+								<div class="input-group">
+									<input type="text" class="form-control" id="inputPhone" name="inputPhone" placeholder="Insira o seu telefone"/>
+								</div>
+								<label  class="control-label" for="inputNif">NIF</label>
+								<div class="input-group">
+									<input type="text" class="form-control" id="inputNif" name="inputNif" placeholder="Insira o seu NIF"/>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary" id="save">OK</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- #modal -->
+
+		<div class="modal fade" id="modalConfig" role="dialog">
+			<div class="modal-dialog modal-sm">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal"></button>
+						<h4 class="modal-title">Opções</h4>
+					</div>
+					<div class="modal-body">
+						<section id="modalConfigPassword">
+							<form id="formPassword">
+								<p>Insira password</p>
+								<input type="password" id="inPassword"/>
+								<button type="button" id="btPassword">OK</button>
+							</form>
+						</section>
+						<section id="modalConfigInner">
+							<section id="config">
+								<form id="formPairs">
+									<p>Número de pares para finalizar jogo: </p>
+									<input type="text" id="inNrPairs" name="inNrPairs" />
+									<button type="button" id="btSetPairs">OK</button>
+								</form>
+							</section>
+
+							<section id="csv" style="margin-top: 20px;">
+								<button type="button" id="btExportCSV">Exportar contactos</button>
+							</section>
+
+							<section id="modalConfigHighscores">
+								<p>HIGHSCORES: <span id="configHighscores"></span></p>
+							</section>
+
+							<section id="reset" style="margin-top: 80px;">
+								<button type="button" id="btReset" style="background-color:red; color:white;">Apagar dados</button>
+							</section>							
+						</section>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary" id="btClose">Fechar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- #modal config-->
+
+		<section id="cardsWrapper">
+			<section id="options">
+				<div class="bar">
+					<p><a id="stop" class="button" href="">SAIR</a></p>
+				</div>
+			</section>
+			<section id="cards">
+				<div class="card">
+					<div class="face front"></div>
+					<div class="face back"></div>
+				</div>
+			</section>
+			<!-- .card -->
+		</section>
+		<!-- #cards -->
+	</section>
+	<script src="https://dl.dropboxusercontent.com/u/5756795/ceva/js/jquery-1.11.3.min.js"></script>
+	<script src="https://dl.dropboxusercontent.com/u/5756795/ceva/js/jquery.validate.min.js"></script>
+	<script src="https://dl.dropboxusercontent.com/u/5756795/ceva/js/ceva.js"></script>
+	<script src="https://dl.dropboxusercontent.com/u/5756795/ceva/js/bootstrap.min.js"></script>
+	<!-- TODO: uncomment
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/jquery.validate.min.js"></script>	
+	<script src="js/ceva.js"></script>
+	<script src="js/bootstrap.min.js"></script>	
+	-->
+</body>
+
+</html>

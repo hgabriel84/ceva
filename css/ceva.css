@@ -1,0 +1,226 @@
+html, body, #wrapper {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+body {
+  text-align: center;
+  background: url(../images/bg.jpg) no-repeat fixed center;
+  background-size: cover;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#wrapper {
+  position: relative;
+}
+#gameStats, #game, #options, #cardsWrapper {
+  position: absolute;
+}
+#gameStats, #options {
+  width: 100%;
+  font-size: 16px;
+}
+#gameStats {
+  top: 10px;
+}
+#options .bar {
+  margin: 0 30px 0;
+  display: block;
+  overflow: auto;
+}
+#gameOptions {
+  height: 20px;
+  float: right;
+  margin-right: 20px;
+}
+#game {
+  width: 100%;
+  top: 80px;
+}
+#cardsWrapper {
+  width: 100%;
+}
+#gameStats .bar {
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 0 30px 0;
+  padding: 10px 0;
+  display: block;
+  -moz-box-shadow: 0px 3px 8px #000;
+  box-shadow: 0px 3px 8px #000;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  overflow: auto;
+}
+#gameStats p#timer {
+  width: 200px;
+  float: left;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0 0 0 10px;
+}
+#gameStats p#highscores {
+  float: right;
+  text-align: right;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0 10px;
+}
+#gameIntro {
+  padding-top: 50px;
+  margin: 0 30px 0;
+  display: block;
+}
+#gameIntro .nrPairs {
+  color: #555;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: bold;
+  padding-top: 20px;
+}
+#gameIntro a.button {
+  background: #2797DA;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  display: block;
+  font-size: 30px;
+  margin: auto;
+  padding: 10px;
+  width: 150px;
+  color: #fff;
+  text-decoration: none;
+}
+#options a.button {
+  background: #2797DA;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  display: block;
+  float: right;
+  padding: 0 10px;
+  margin: 30px 30px 0 0;
+  color: #fff;
+  text-decoration: none;
+}
+#cards {
+  margin: 50px 30px 10px;
+  display: block;
+  position: relative;
+}
+
+/* Define the 3D perspective view and dimension of each card. */
+
+.card {
+  -webkit-perspective: 600;
+  position: absolute;
+  -moz-transition: all .3s;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  cursor: pointer;
+  display: inline-block;
+}
+
+#btConfig {
+  cursor: pointer;
+}
+
+#modal, #modalConfig {
+  color: #000;
+}
+.modal-content {
+  width: 400px;
+}
+.modal-body {
+  text-align: left;
+}
+.face {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-transition-property: opacity, transform, box-shadow;
+  -webkit-transition-duration: .3s;
+  -webkit-backface-visibility: hidden;
+}
+.front {
+  background: url(../images/ceva.png);
+  background-size: 100% 100%;
+  z-index: 10;
+}
+.back {
+  -webkit-transform: rotate3d(0, 1, 0, -180deg);
+  z-index: 8;
+}
+.card-flipped .front {
+  -webkit-transform: rotate3d(0, 1, 0, 180deg);
+  z-index: 8;
+}
+.card-flipped .back {
+  -webkit-transform: rotate3d(0, 1, 0, 0deg);
+  z-index: 10;
+}
+.card-removed {
+  opacity: 0;
+}
+.pair01 {
+  background: url(../images/pair01.png);
+  background-size: 100% 100%;
+}
+.pair02 {
+  background: url(../images/pair02.png);
+  background-size: 100% 100%;
+}
+.pair03 {
+  background: url(../images/pair03.png);
+  background-size: 100% 100%;
+}
+.pair04 {
+  background: url(../images/pair04.png);
+  background-size: 100% 100%;
+}
+.pair05 {
+  background: url(../images/pair05.png);
+  background-size: 100% 100%;
+}
+.pair06 {
+  background: url(../images/pair06.png);
+  background-size: 100% 100%;
+}
+.pair07 {
+  background: url(../images/pair07.png);
+  background-size: 100% 100%;
+}
+.pair08 {
+  background: url(../images/pair08.png);
+  background-size: 100% 100%;
+}
+.pair09 {
+  background: url(../images/pair09.png);
+  background-size: 100% 100%;
+}
+.pair10 {
+  background: url(../images/pair10.png);
+  background-size: 100% 100%;
+}
+.pair11 {
+  background: url(../images/pair11.png);
+  background-size: 100% 100%;
+}
+.pair12 {
+  background: url(../images/pair12.png);
+  background-size: 100% 100%;
+}
+.pair13 {
+  background: url(../images/pair13.png);
+  background-size: 100% 100%;
+}
+.pair14 {
+  background: url(../images/pair14.png);
+  background-size: 100% 100%;
+}
+.pair15 {
+  background: url(../images/pair15.png);
+  background-size: 100% 100%;
+}
