@@ -1,15 +1,15 @@
 CACHE MANIFEST
  
-# Version: 1.02
+# Version: 1.03
 
 CACHE:
 https://hgabriel84.github.io/ceva/ceva.html
 https://hgabriel84.github.io/ceva/css/bootstrap.min.css
 https://hgabriel84.github.io/ceva/css/bootstrap-theme.min.css
-https://hgabriel84.github.io/ceva/css/ceva.css
+https://hgabriel84.github.io/ceva/css/style.css
 https://hgabriel84.github.io/ceva/css/css3transition.css
 https://hgabriel84.github.io/ceva/js/bootstrap.min.js
-https://hgabriel84.github.io/ceva/js/ceva.js
+https://hgabriel84.github.io/ceva/js/script.js
 https://hgabriel84.github.io/ceva/js/jquery.validate.min.js
 https://hgabriel84.github.io/ceva/js/jquery-1.11.3.min.js
 https://hgabriel84.github.io/ceva/images/bg.jpg
