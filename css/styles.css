@@ -145,7 +145,7 @@ body {
   -webkit-backface-visibility: hidden;
 }
 .front {
-  background: url(../images/ceva.png);
+  background: url(../images/logo.png);
   background-size: 100% 100%;
   z-index: 10;
 }
