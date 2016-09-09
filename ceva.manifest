@@ -1,31 +1,31 @@
 CACHE MANIFEST
  
-# Version: 1.05
+# Version: 1.06
 
 CACHE:
-https://hgabriel84.github.io/ceva/index.html
-https://hgabriel84.github.io/ceva/css/bootstrap.min.css
-https://hgabriel84.github.io/ceva/css/bootstrap-theme.min.css
-https://hgabriel84.github.io/ceva/css/styles.css
-https://hgabriel84.github.io/ceva/css/css3transition.css
-https://hgabriel84.github.io/ceva/js/bootstrap.min.js
-https://hgabriel84.github.io/ceva/js/script.js
-https://hgabriel84.github.io/ceva/js/jquery.validate.min.js
-https://hgabriel84.github.io/ceva/js/jquery-1.11.3.min.js
-https://hgabriel84.github.io/ceva/images/bg.jpg
-https://hgabriel84.github.io/ceva/images/logo.png
-https://hgabriel84.github.io/ceva/images/pair01.png
-https://hgabriel84.github.io/ceva/images/pair02.png
-https://hgabriel84.github.io/ceva/images/pair03.png
-https://hgabriel84.github.io/ceva/images/pair04.png
-https://hgabriel84.github.io/ceva/images/pair05.png
-https://hgabriel84.github.io/ceva/images/pair06.png
-https://hgabriel84.github.io/ceva/images/pair07.png
-https://hgabriel84.github.io/ceva/images/pair08.png
-https://hgabriel84.github.io/ceva/images/pair09.png
-https://hgabriel84.github.io/ceva/images/pair10.png
-https://hgabriel84.github.io/ceva/images/pair11.png
-https://hgabriel84.github.io/ceva/images/pair12.png
-https://hgabriel84.github.io/ceva/images/pair13.png
-https://hgabriel84.github.io/ceva/images/pair14.png
-https://hgabriel84.github.io/ceva/images/pair15.png
+index.html
+css/bootstrap.min.css
+css/bootstrap-theme.min.css
+css/styles.css
+css/css3transition.css
+js/bootstrap.min.js
+js/script.js
+js/jquery.validate.min.js
+js/jquery-1.11.3.min.js
+images/bg.jpg
+images/logo.png
+images/pair01.png
+images/pair02.png
+images/pair03.png
+images/pair04.png
+images/pair05.png
+images/pair06.png
+images/pair07.png
+images/pair08.png
+images/pair09.png
+images/pair10.png
+images/pair11.png
+images/pair12.png
+images/pair13.png
+images/pair14.png
+images/pair15.png
